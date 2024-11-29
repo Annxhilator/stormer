@@ -14,12 +14,14 @@ Usage
 
 
 
--q: quiet mode, only displays successeful attempts
+-q: quiet mode, only displays successful attempts
 
 
 
 -s: save mode, stormer will save all vulnerable urls to a .txt file
 
-
+Disclamer
+-
+No harm caused by this tool will be of my responsability, use it ethically and with caution.
 
 

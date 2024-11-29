@@ -32,12 +32,23 @@ targetfile = input("path for target file: ")
 targets = open(f"{targetfile}", "r+")
 vulnerabilities_found = 0
 
+if payload == 1:           #argparser payload setup
+    payload = payload:
+elif args.level == 2:
+    payloads = payloads2
+elif args.level == 3:
+    payloads = payloads 3:
+else:
+    print("invalid level, stormer only supports level 1-3, using default(1) instead.")
+    payloads = payloads
+    
 #tests for sqli
 for target in targets:
     target = target.strip()
     skip_not_found = False
     vulnerability_found = False
-    
+    if args.level == 2:
+        
     for payload in payloads:
        try:
         response = requests.post(f"{target}{payload}")

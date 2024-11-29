@@ -5,7 +5,7 @@ Stormer is mass tester for sql injections, its purpose is to be fast, reliable a
 
 
 
-![Screenshot_20241128-234604 (1).png](https://github.com/user-attachments/assets/7c665355-3e9c-48ac-a3bd-50ded724af13)
+[Screenshot_20241128-234604 (1).png](https://github.com/user-attachments/assets/7c665355-3e9c-48ac-a3bd-50ded724af13)
 
 
 

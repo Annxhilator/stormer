@@ -15,7 +15,7 @@ def parser():  #argparser setup
         "-s", "--save",
         action = "store_true",
         required = False,
-        help = "when activaded, flags code to not save vulnerable urls in a .txt file" 
+        help = "when activaded, flags code to save vulnerable urls in a .txt file" 
     )
     parser.add_argument(
         "-l", "--level",
@@ -73,7 +73,7 @@ for target in targets:
                break
             if vulnerability_found == False and skip_not_found == False:
                 if args.quiet:
-                    print(Fore.RED + f"vulnerability not found in url: {target} with all payloads tested" + Fore.RESET)
+                    print(Fore.RED + f"vulnerability not found in url: {target} with payload: {payload}" + Fore.RESET)
        except ConnectionResetError:
             print(f"[-] connection error in url: {target}, skipping")
             continue    
